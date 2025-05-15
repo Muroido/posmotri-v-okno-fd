@@ -15,7 +15,7 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   color: #fff;
   background-color: #1b1919;
@@ -50,20 +50,23 @@ ol {
   white-space: nowrap;
 }
 
+/*Лэйаут*/
 .content {
   display: grid;
   grid-template-columns: auto auto;
   align-items: end;
   gap: 30px;
 }
+
+/*Левая часть*/
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 18px;
 }
 
 .title {
-  font-family: Oswald, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
   line-height: 0.94;
   color: #fff;
@@ -75,18 +78,26 @@ ol {
 }
 
 .content__list {
-  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  height: 298px;
-  overflow-y: auto;
+  gap: 25px;
+}
+
+.content__list-container {
+  position: relative;
+  height: 300px;
+  overflow-y: scroll;
 }
 
 .content__card-link {
   display: block;
-  margin: 2px;
   text-decoration: none;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  text-decoration-thickness: 1px;
 }
 
 .content__card-link:active {
@@ -106,12 +117,6 @@ ol {
   justify-content: space-between;
 }
 
-.content__video-card:hover {
-  text-decoration: underline;
-  text-decoration-color: #fff;
-  text-decoration-thickness: 1px;
-}
-
 .content__video-card-description-container {
   display: flex;
   flex-direction: column;
@@ -120,25 +125,25 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
-  white-space: nowrap;         
-  overflow: hidden;             
-  text-overflow: ellipsis;     
-  max-inline-size: 100%;  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-inline-size: 100%;
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 0.9;
-  white-space: nowrap;         
-  overflow: hidden;             
-  text-overflow: ellipsis;     
-  max-inline-size: 100%;  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-inline-size: 100%;
 }
 
 .content__video-card-thumbnail {
@@ -162,7 +167,6 @@ ol {
 .more-button {
   width: 100%;
 }
-
 
 .result {
   display: flex;
@@ -282,6 +286,7 @@ ol {
   align-self: end;
   width: 193px;
 }
+
 .button {
   height: 34px;
   border: 1px solid currentColor;

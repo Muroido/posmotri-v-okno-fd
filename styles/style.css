@@ -174,7 +174,6 @@ ol {
 }
 
 /* Видео */
-
 .result__video-container {
   position: relative;
   width: 711px;
@@ -190,7 +189,6 @@ ol {
 }
 
 /* Форма */
-
 .search-form {
   display: flex;
   align-self: start;
@@ -241,8 +239,7 @@ ol {
   outline: none;
 }
 
-/* form checkbox */
-
+/* Чекбокс */
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;

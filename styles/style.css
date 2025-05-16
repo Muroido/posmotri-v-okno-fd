@@ -61,7 +61,7 @@ ol {
 /*Правая часть*/
 .content__details {
   display: flex;
-  width: 396px;
+  width: 395px;
   flex-direction: column;
   gap: 18px;
 }
@@ -87,6 +87,7 @@ ol {
 .content__list-container {
   position: relative;
   height: 300px;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
